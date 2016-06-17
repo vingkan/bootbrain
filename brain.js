@@ -14,6 +14,7 @@ window.Batliner = (function(){
 		facialStructures: [],
 		handGestures: [],
 
+		//Assumptions: no pre-qualified responses
 		Emmitable: function(emmitable){
 			var _this = this;
 			var emmission = {
@@ -22,8 +23,8 @@ window.Batliner = (function(){
 				context: _this,
 				response: null,
 				getResponse: function(){
-					return new Promise(function(resolve, reject){
-						
+					return new OmniPromise(function(resolve, reject){
+
 					});
 				}
 			}
